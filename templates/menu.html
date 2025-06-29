@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="menu">
+    <h1>Menú de Brownies</h1>
+    <div class="items">
+        <div class="item">
+            <h2>Brownie Clásico</h2>
+            <p>Con nueces, chocolate puro y mucho amor.</p>
+            <a href="{{ url_for('pedir', nombre='clasico') }}" class="boton-pedir">Pedir</a>
+        </div>
+        <div class="item">
+            <h2>Brownie Arcoíris</h2>
+            <p>Relleno de colores y sabores mágicos.</p>
+            <a href="{{ url_for('pedir', nombre='arcoiris') }}" class="boton-pedir">Pedir</a>
+        </div>
+        <div class="item">
+            <h2>Brownie Cósmico</h2>
+            <p>Con topping estelar y polvo de felicidad.</p>
+            <a href="{{ url_for('pedir', nombre='cosmico') }}" class="boton-pedir">Pedir</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Elimina barras de desplazamiento */
+    font-family: 'Comic Sans MS', cursive;
+    background: #111;
+    color: white;
+}
+
+/* Portada */
+
+.portada {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Botón Menú sobre imagen */
+
+.boton-menu {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: #00ff88;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px yellow;
+    font-weight: bold;
+}
+
+/* Menú */
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    background: radial-gradient(circle at top, #222, #000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu h1 {
+    font-size: 3rem;
+    color: #ffdd00;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+}
+
+.item {
+    background: linear-gradient(45deg, #00ff88, #ff00ff);
+    padding: 20px;
+    border-radius: 15px;
+    width: 25%;
+    box-shadow: 0 0 20px #ffdd00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.item p {
+    font-size: 1rem;
+}
+
+.boton-pedir {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffdd00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}

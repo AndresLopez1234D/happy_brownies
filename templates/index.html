@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="portada">
+    <img src="{{ url_for('static', filename='images/portada.png') }}" alt="Super Happy Brownie">
+    <a class="boton-menu" href="{{ url_for('menu') }}">Menú</a>
+</div>
+{% endblock %}
