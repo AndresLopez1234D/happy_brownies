@@ -14,6 +14,14 @@ def menu():
 def pedir(nombre):
     return f"<h2>Gracias por pedir el brownie de {nombre}. ¡En breve te llegará la felicidad! 🌈🍫</h2>"
 
+@app.after_request
+def set_headers(response):
+    response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self'; object-src 'none';"
+    response.headers['X-Frame-Options'] = 'DENY'
+    return response
+
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 
